@@ -10,7 +10,11 @@ The Spring Boot controller receives GET requests containing the shortened URL th
 ## Front-end
 The front-end is just a create-react-app web page that handles user input. 
 
-The landing page asks users to enter in the URL that they want shortened. If they enter in a valid URL, a fetch request is made to the backend to store it in Redis. The response contains the ID of the stored URL, and this ID is appended onto the web page path (for now, http://localhost:3000/url/{urlID}). If the user enters in an invalid input, they're told, "Please enter in a valid input." Inputs are validated on the back-end using the Apache commons UrlValidator class. 
+The landing page asks users to enter in the URL that they want shortened. 
+![landing page](https://github.com/rblonski18/url-shortener/blob/master/images/simple_home_page.PNG?raw=true)
+If they enter in a valid URL, a fetch request is made to the backend to store it in Redis. The response contains the ID of the stored URL, and this ID is appended onto the web page path (for now, http://localhost:3000/url/{urlID}). 
+![landing page](https://github.com/rblonski18/url-shortener/blob/master/images/shortened-url.PNG?raw=true)
+If the user enters in an invalid input, they're told, "Please enter in a valid input." Inputs are validated on the back-end using the Apache commons UrlValidator class. 
 
 The user can take the shortened URL and paste it into their browser to be redirected to the long URL. The front-end goes to a 'Redirect' React component, which just retrieves the original URL from the back-end in a UseEffect hook. 
 
