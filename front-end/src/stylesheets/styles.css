@@ -1,0 +1,36 @@
+body {
+    background-color: #e5e5e5;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    margin-top: 3rem;
+    color: #2d4059;
+}
+
+button {
+    margin-top: 1rem;
+    background-color: #ea5455 !important;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+}
+
+.form-group {
+    justify-content: center;
+}
+
+.url-input {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+input {
+    margin-top: 3rem !important;
+    height: 2rem;
+    width: 20rem !important;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: auto !important;
+}
