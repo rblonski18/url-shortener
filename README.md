@@ -38,5 +38,12 @@ For instructions, refer to:
 Serving backend on Elastic Beanstalk: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Java.html
 Serving front-end on Amplify: https://aws.amazon.com/amplify/resources/
 
+## Further changes
+If I wasn't in finals week I would have more time to make a few changes. 
+
+1. Security is non-existent, if usernames or passwords were appended to the URL field, they would be exposed in the HTTP request and response body throughout the app, as well as being stored in Redis as just a string with no encryption. 
+2. There are no preventative measures taken to discourage using the service for criminal activity, such as malware distribution.
+3. Error checking is minimal
+
 
 
